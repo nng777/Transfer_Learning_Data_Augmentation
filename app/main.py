@@ -173,7 +173,7 @@ def demo_train(epochs: int = 1, image_size: int = 160, data_dir: str | None = No
     )
     model.fit(train_ds, validation_data=val_ds, epochs=max(1, epochs // 2))
 
-    model.save("outputs/transfer_learning_model")
+    model.save("outputs/transfer_learning_model.keras")
     print("Saved model to outputs/transfer_learning_model")
 
 
